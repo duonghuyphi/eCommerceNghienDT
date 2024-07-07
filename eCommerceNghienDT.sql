@@ -4,8 +4,8 @@ GO
 ALTER DATABASE eCommerceNghienDT SET single_user WITH ROLLBACK immediate
 GO
 
-DROP DATABASE eCommerceNghienDT
-GO
+--DROP DATABASE eCommerceNghienDT
+--GO
 
 CREATE DATABASE eCommerceNghienDT
 GO
@@ -278,13 +278,13 @@ ALTER TABLE Products CHECK CONSTRAINT FK_ProductsUsers
 GO
 
 /* Reviews */
-ALTER TABLE Reviews WITH CHECK ADD CONSTRAINT FK_ReviewsOrderDetails FOREIGN KEY(orderdetail_id)
-REFERENCES OrderDetails (id) ON DELETE NO ACTION
-GO
-ALTER TABLE Reviews CHECK CONSTRAINT FK_ReviewsOrderDetails
-GO
+--ALTER TABLE Reviews WITH CHECK ADD CONSTRAINT FK_ReviewsOrderDetails FOREIGN KEY(orderdetail_id)
+--REFERENCES OrderDetails (id) ON DELETE NO ACTION
+--GO
+--ALTER TABLE Reviews CHECK CONSTRAINT FK_ReviewsOrderDetails
+--GO
 
-USE master
-GO
-ALTER DATABASE eCommerceNghienDT SET READ_WRITE 
-GO
+--USE master
+--GO
+--ALTER DATABASE eCommerceNghienDT SET READ_WRITE 
+--GO
